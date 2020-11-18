@@ -1,0 +1,9 @@
+@mixin full-width-element {
+  left: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: 100vw;
+  max-width: none;
+}

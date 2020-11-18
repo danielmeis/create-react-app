@@ -1,0 +1,48 @@
+$color__black             : rgb(0,   0,   0  );
+$color__white             : rgb(255, 255, 255);
+
+// Neutral colors
+$color__off-black         : rgb(33 , 29 , 27 );
+$color__off-white         : rgb(248, 248, 248);
+$color__charcoal          : rgb(34,  34,  34 );
+$color__blue-gray         : rgb(83,  98,  124);
+$color__dark-gray         : rgb(39,  39,  39 );
+$color__light-gray        : rgb(238, 238, 238);
+$color__middle-gray       : rgb(126, 131, 139);
+$color__silver            : rgb(155, 161, 171);
+
+
+// Accent colors
+
+// Blues
+$color__blue              : rgb( 55,  123, 196 );
+$color__dk-blue           : rgb( 48,  108, 172 );
+$color__navy              : rgb( 48,  90 , 140 );
+
+// Misc accent colors
+$color__green             : rgb( 22,  148, 27  );
+
+// Transparent overlay colors
+$color__overlay-black          : rgba(0,   0,   0, .75);
+$color__transparent-off-black  : rgba(36 , 31 , 27, 0.6);
+
+$color__text-shadow       : 1px 1px 7px rgba(0, 0, 0, .5);
+
+$color__shadow            : rgba( 10, 31, 68, 0.3);
+$color__box-shadow        : 0 7px 9px $color__shadow;
+
+$color__text-main         : $color__off-black;
+$color__link              : $color__blue;
+$color__link-hover        : $color__navy;
+
+$color__button-background        : $color__blue;
+$color__button-border            : $color__dk-blue;
+$color__button-background-hover  : $color__navy;
+
+// Screen reader colors
+$color__background-screen : $color__white;
+$color__text-screen       : $color__off-black;
+
+// Borders
+$color__border-black      : $color__off-black;
+$color__border-gray       : $color__light-gray;

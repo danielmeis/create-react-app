@@ -1,0 +1,17 @@
+//  Z-indexes
+
+//  Each of these lists are ordered from the lowest z-index to the highest
+//  No numbers should be hardcoded in our scss files. Instead, use z-index: index($stacking-order-list-name, your-element-name);
+//  For more information, see here: http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+
+// USAGE
+// index(array, elementInArray);
+// i.e. z-index: index( $site-elements, modal-notification );
+
+// top level/interactive elements
+// Interactive elements are anything that can be clicked on by the user.
+// These require z-indexes higher (relatively), than other elements.
+$site-elements : logo, main-menu, navigation, overlay, overlay-gradient, mobile-nav-container, modal-notification;
+
+//stacking order within modals
+$modal-elements: modal-image, modal-text;

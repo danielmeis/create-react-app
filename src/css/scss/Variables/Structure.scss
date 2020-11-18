@@ -1,0 +1,16 @@
+// Responsive widths.
+
+$size__spacing-unit: 10px;
+$size__site-main: 100%;
+
+// Breakpoints
+$break__mobile            : max-width, 767px;
+$break__only-small-mobile : 479px;
+$break__only-tablet       : min-width, 768px, max-width, 1019px;
+$break__tablet            : 768px;
+$break__desktop           : 1020px;
+$break__sub-desktop       : max-width, 1019px;
+$break__max               : 1200px;
+$break__large-desktop     : 1660px;
+$break__mobile-menu         : 980px;
+$break__sub-mobile-menu     : max-width, 979px;

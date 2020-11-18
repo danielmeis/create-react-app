@@ -1,0 +1,79 @@
+
+@mixin media( $res ) {
+  @if only-small-mobile == $res {
+    @media only screen and (max-width: 478px) {
+      @content;
+    }
+  }
+
+  @if small-mobile == $res {
+    @media only screen and (min-width: $break__only-small-mobile) {
+      @content;
+    }
+  }
+
+  @if mobile == $res {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if tablet == $res {
+    @media only screen and (min-width: $break__tablet) {
+      @content;
+    }
+  }
+
+  @if sub-tablet == $res {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @if mobile-menu == $res {
+    @media only screen and (min-width: $break__mobile-menu) {
+      @content;
+    }
+  }
+
+  @if desktop == $res {
+    @media only screen and (min-width: $break__desktop) {
+      @content;
+    }
+  }
+
+  @if wide-max == $res {
+    @media only screen and (min-width: $break__max) {
+      @content;
+    }
+  }
+}
+
+@mixin link-transition( $attr: color ) {
+  transition: $attr $link_transition ease-in-out;
+}
+
+@mixin button-transition() {
+  transition: background $button_transition ease-in-out;
+}
+
+@mixin button-all-transition() {
+  transition: all $button_transition ease-in-out;
+}
+
+@mixin background-transition() {
+  transition: background $background_transition ease-in-out;
+}
+
+@mixin standard-transition() {
+  transition: all $standard_transition ease-in-out;
+}
+
+@mixin selection {
+  ::-moz-selection {
+    @content;
+  }
+  ::selection {
+    @content;
+  }
+}
